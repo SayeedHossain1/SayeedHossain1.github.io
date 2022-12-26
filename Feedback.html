@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.Container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    height: 620px;
+    width: 50%;
+    margin-left: 23%;
+}
+</style>
+<link rel="stylesheet" href="Home.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+    <div class="container">
+        <h1>WELCOME TO FEEDBACK PAGE </h1>
+      </div>
+      <div class="container">
+        <div class="home"><a href="index.html" id="list-btn">Home</a></div>
+        <div class="news"><a href="news.html" id="list-btn">Live TV</a></div>
+        <div class="Calculator"><a href="Project-Calculator.html" id="list-btn">Calculator</a></div>
+        <div class="Contract"><a href="Feedback.html" id="list-btn">Feedback</a></div>
+        
+    
+    
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Social Link</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="https://www.facebook.com/shafiqur.me" class="fa fa-facebook"> facebook</a>
+                <a href="https://twitter.com/Shafiqur_me" class="fa fa-twitter"> twitter</a>
+                <a href="https://www.linkedin.com/in/Shafiqur-Rohman/" class="fa fa-linkedin"> linkedin</a>
+            </div>
+        </div>
+    
+    </div>
+
+
+<div class="Container">
+    <h3>Feedback Form</h3>
+    <div>
+        <form action="#">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="Bangaldesh">Bangaldesh</option>
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="India">India</option>
+              <option value="Nepal">Nepal</option>
+              <option value="Maldive">Maldive</option>
+              <option value="China">China</option>
+              <option value="Bhutan">Bhutan</option>
+
+            </select>
+        
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+            <input type="submit" value="Submit">
+          </form>
+    </div>
+</div>
+
+    <script src="home.js"></script>
+
+</body>
+</html>
