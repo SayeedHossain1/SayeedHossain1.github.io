@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bangladesh Project Vision Map</title>
+  </head>
+  <body>
+    <!-- Top Nav -->
+
+    <div class="topnav" id="myTopnav">
+      <!-- <a href="#home" class="active"></a> -->
+      <span class="open-button1 active" onclick="openNav()"
+        ><img class="search-button" src="search-button.png" alt="Search button"
+      /></span>
+      <a href="#news"></a>
+      <a href="#contact" id="topnav-a" class="app-name"
+        >Bangladesh Project Vision Map</a
+      >
+      <a
+        href="#about"
+        id="topnav-a"
+        class="about-us-button"
+        onclick="openAboutUs()"
+        >About Us</a
+      >
+      <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a> -->
+    </div>
+
+    <!-- Side Nav -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#" class="filter-by-title">FILTER BY CATEGORY & DATE</a>
+      <label for="search-by-category">Category</label>
+      <select class="category-selector">
+        <option value="Education">Education</option>
+        <option value="Health">Health</option>
+        <option value="Governance">Governance</option>
+        <option value="Energy and Mining">Energy and Mining</option></select
+      ><br />
+      <label for="search-by-time-window-start-time">Start time</label>
+      <input
+        type="date"
+        id="search-by-time-window-start-time"
+        name="search-by-time-window-start-time"
+        placeholder="Choose start date-start-time"
+      /><br />
+      <label for="search-by-time-window-completion-time">End time</label>
+      <input
+        type="date"
+        id="search-by-time-window-completion-time"
+        name="search-by-time-window-completion-time"
+        placeholder="Choose start date-completion-time"
+      /><br />
+      <button class="filter-submit-button">Filter</button>
+      <!-- <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a> -->
+    </div>
+
+    <!-- Project 01 -->
+    <div id="myProject01" class="sidenav projects-page projects-page01">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNavP1()"
+        >&times;</a
+      >
+      <a href="#" class="project-details-class">PROJECT DETAILS</a>
+      <p>
+        <strong>Project name:</strong> JICA Support Program 3 for Strengthening
+        Mathematics and Science Education in Primary Education Project
+      </p>
+      <p><strong>Category:</strong> Education</p>
+      <p>
+        <strong>Description:</strong> National level of academic skills and
+        knowledge obtained in primary mathematics and science is improved.
+      </p>
+      <p>
+        <strong>Affiliated Agency:</strong> Ministry of Primary and Mass
+        Education, Directorate of Primary Education
+      </p>
+      <p><strong>Project start time:</strong> 2019-04-01</p>
+      <p><strong>Project completion time:</strong> 2023-06-30</p>
+      <p><strong>Total budget:</strong> JPY 380M</p>
+      <p><strong>Completion percentage:</strong> 77.36%</p>
+      <div class="progress2 progress-moved">
+        <div class="progress-bar2"></div>
+      </div>
+      <form>
+        <textarea>
+Hi there! How do you feel about this project? If you have any issues or concerns regarding this project, you are welcome to post them here ... </textarea
+        >
+      </form>
+      <button class="filter-submit-button feedback-submit-button">
+        Submit
+      </button>
+    </div>
+
+    <!-- Project 02 -->
+    <div id="myProject02" class="sidenav projects-page projects-page02">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNavP2()"
+        >&times;</a
+      >
+      <a href="#" class="project-details-class">PROJECT DETAILS</a>
+      <p>
+        <strong>Project name:</strong> Project for Capacity Building of Nursing
+        Services Phase 2
+      </p>
+      <p><strong>Category:</strong> Health</p>
+      <p>
+        <strong>Description:</strong> The quality of nursing education is
+        improved in Bangladesh
+      </p>
+      <p>
+        <strong>Affiliated Agency:</strong> Directorate General of Nursing and
+        Midwifery Services (DGNM), Bangladesh Nursing and Midwifery Council
+        (BNMC)
+      </p>
+      <p><strong>Project start time:</strong> 2022-03-26</p>
+      <p><strong>Project completion time:</strong> 2026-03-25</p>
+      <p><strong>Total budget:</strong> JPY 300M</p>
+      <p><strong>Completion percentage:</strong> 22.15%</p>
+      <div class="progress2 progress-moved">
+        <div class="progress-bar2"></div>
+      </div>
+      <form>
+        <textarea>
+ Hi there! How do you feel about this project? If you have any issues or concerns regarding this project, you are welcome to post them here ... </textarea
+        >
+      </form>
+      <button class="filter-submit-button feedback-submit-button">
+        Submit
+      </button>
+    </div>
+
+    <!-- Project 03 -->
+    <div id="myProject03" class="sidenav projects-page projects-page03">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNavP3()"
+        >&times;</a
+      >
+      <a href="#" class="project-details-class">PROJECT DETAILS</a>
+      <p>
+        <strong>Project name:</strong> The Project for Strengthening Health
+        Systems through Organizing Communities
+      </p>
+      <p><strong>Category:</strong> Health</p>
+      <p>
+        <strong>Description:</strong>
+        The Health status of population in Bangladesh is improved
+      </p>
+      <p>
+        <strong>Affiliated Agency:</strong> Operational Plans (OPs) of the
+        Ministry of Health and Family Welfare/ Sectors-Wide Program Management
+        and Monitoring, Health Economics and Finance, Non-communicable Disease
+        Control (NCDC), Community Based Healthcare (CBHC), Upazila Health Care
+        (UHC), Hospital Services Management (HSM), Lifestyle and Health
+        Education Promotion (L & HEP)1
+      </p>
+      <p><strong>Project start time:</strong> 2017-06-29</p>
+      <p><strong>Project completion time:</strong> 2022-07-28</p>
+      <p><strong>Total budget:</strong> JPY 400M</p>
+      <p><strong>Completion percentage:</strong> 97.55%</p>
+      <div class="progress2 progress-moved">
+        <div class="progress-bar2"></div>
+      </div>
+      <form>
+        <textarea>
+ Hi there! How do you feel about this project? If you have any issues or concerns regarding this project, you are welcome to post them here ... </textarea
+        >
+      </form>
+      <button class="filter-submit-button feedback-submit-button">
+        Submit
+      </button>
+    </div>
+
+    <!-- Project 04 -->
+    <div id="myProject04" class="sidenav projects-page projects-page04">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNavP4()"
+        >&times;</a
+      >
+      <a href="#" class="project-details-class">PROJECT DETAILS</a>
+      <p>
+        <strong>Project name:</strong>
+        Safe Motherhood Promotion Project
+      </p>
+      <p><strong>Category:</strong> Health</p>
+      <p>
+        <strong>Description:</strong>
+        Approaches of Reproductive Health (RH) services extracted from the
+        Project are standardized and applied to other districts.
+      </p>
+      <p>
+        <strong>Affiliated Agency:</strong>
+        Ministry of Health and Family Welfare*2, Directorate of Family Planning,
+        Directorate of Health Services, District Family Planning Office,
+        District Health Services Office, and Upazila Health Complex
+      </p>
+      <p><strong>Project start time:</strong> 2006-07-01</p>
+      <p><strong>Project completion time:</strong> 2010-06-30</p>
+      <p><strong>Total budget:</strong> JPY 350M</p>
+      <p><strong>Completion percentage:</strong> 100.00%</p>
+      <div class="progress2 progress-moved">
+        <div class="progress-bar2"></div>
+      </div>
+      <form>
+        <textarea>
+ Hi there! How do you feel about this project? If you have any issues or concerns regarding this project, you are welcome to post them here ... </textarea
+        >
+      </form>
+      <button class="filter-submit-button feedback-submit-button">
+        Submit
+      </button>
+    </div>
+
+    <!-- Project 05 -->
+    <div id="myProject05" class="sidenav projects-page projects-page05">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNavP5()"
+        >&times;</a
+      >
+      <a href="#" class="project-details-class">PROJECT DETAILS</a>
+      <p>
+        <strong>Project name:</strong>
+
+        Safe Motherhood Promotion Project Phase 2
+      </p>
+      <p><strong>Category:</strong> Health</p>
+      <p>
+        <strong>Description:</strong>
+
+        Maternal and neonatal health status is improved in Bangladesh.
+      </p>
+      <p>
+        <strong>Affiliated Agency:</strong>
+
+        Ministry of Health and Family Welfare*2, Directorate of Family Planning,
+        Directorate of Health Services, District Family Planning Office,
+        District Health Services Office, and Upazila Health Complex
+      </p>
+      <p><strong>Project start time:</strong> 2011-07-01</p>
+      <p><strong>Project completion time:</strong> 2016-06-30</p>
+      <p><strong>Total budget:</strong> JPY 420M</p>
+      <p><strong>Completion percentage:</strong> 100.00%</p>
+      <div class="progress2 progress-moved">
+        <div class="progress-bar2"></div>
+      </div>
+      <form>
+        <textarea>
+ Hi there! How do you feel about this project? If you have any issues or concerns regarding this project, you are welcome to post them here ... </textarea
+        >
+      </form>
+      <button class="filter-submit-button feedback-submit-button">
+        Submit
+      </button>
+    </div>
+
+    <!-- Project 06 -->
+    <div id="myProject06" class="sidenav projects-page projects-page06">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNavP6()"
+        >&times;</a
+      >
+      <a href="#" class="project-details-class">PROJECT DETAILS</a>
+      <p>
+        <strong>Project name:</strong>
+
+        National Integrity Strategy Support Project Phase 2
+      </p>
+      <p><strong>Category:</strong> Governance</p>
+      <p>
+        <strong>Description:</strong>
+
+        Transparency and accountability system of the public administration and
+        associated institutions is enhanced.
+      </p>
+      <p>
+        <strong>Affiliated Agency:</strong>
+
+        Cabinet Division of the Government of Bangladesh
+      </p>
+      <p><strong>Project start time:</strong> 2011-07-01</p>
+      <p><strong>Project completion time:</strong> 2016-06-30</p>
+      <p><strong>Total budget:</strong> JPY 400M</p>
+      <p><strong>Completion percentage:</strong> 100.00%</p>
+      <div class="progress2 progress-moved">
+        <div class="progress-bar2"></div>
+      </div>
+      <form>
+        <textarea>
+ Hi there! How do you feel about this project? If you have any issues or concerns regarding this project, you are welcome to post them here ... </textarea
+        >
+      </form>
+      <button class="filter-submit-button feedback-submit-button">
+        Submit
+      </button>
+    </div>
+
+    <!-- Project 07 -->
+    <div id="myProject07" class="sidenav projects-page projects-page07">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNavP7()"
+        >&times;</a
+      >
+      <a href="#" class="project-details-class">PROJECT DETAILS</a>
+      <p>
+        <strong>Project name:</strong>
+
+        Project for Capacity Development of City Corporations (C4C)
+      </p>
+      <p><strong>Category:</strong> Governance</p>
+      <p>
+        <strong>Description:</strong>
+
+        Functions and organizational structure of the target City Corporations
+        (CCs) are optimized.
+      </p>
+      <p>
+        <strong>Affiliated Agency:</strong>
+
+        Local Government Division (LGD), Ministry of Local Government, Rural
+        Development and Cooperatives (MLGRD&C)
+      </p>
+      <p><strong>Project start time:</strong> 2016-01-06</p>
+      <p><strong>Project completion time:</strong> 2021-06-05</p>
+      <p><strong>Total budget:</strong> JPY 410M</p>
+      <p><strong>Completion percentage:</strong> 99.50%</p>
+      <div class="progress2 progress-moved">
+        <div class="progress-bar2"></div>
+      </div>
+      <form>
+        <textarea>
+Hi there! How do you feel about this project? If you have any issues or concerns regarding this project, you are welcome to post them here ... </textarea
+        >
+      </form>
+      <button class="filter-submit-button feedback-submit-button">
+        Submit
+      </button>
+    </div>
+
+    <!-- Project 08 -->
+    <div id="myProject08" class="sidenav projects-page projects-page08">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNavP8()"
+        >&times;</a
+      >
+      <a href="#" class="project-details-class">PROJECT DETAILS</a>
+      <p>
+        <strong>Project name:</strong>
+
+        Strengthening Paurashava Governance Project (SPGP)
+      </p>
+      <p><strong>Category:</strong> Governance</p>
+      <p>
+        <strong>Description:</strong>
+
+        Measures of Pourashava capacity development are taken nation-wide based
+        on mid-long term strategy.
+      </p>
+      <p>
+        <strong>Affiliated Agency:</strong>
+
+        Local Government Division (LGD), Ministry of Local Government, Rural
+        Development and Cooperatives (MLGRD&C)
+      </p>
+      <p><strong>Project start time:</strong> 2014-02-15</p>
+      <p><strong>Project completion time:</strong> 2018-10-16</p>
+      <p><strong>Total budget:</strong> JPY 150M</p>
+      <p><strong>Completion percentage:</strong> 100.00%</p>
+      <div class="progress2 progress-moved">
+        <div class="progress-bar2"></div>
+      </div>
+      <form>
+        <textarea>
+Hi there! How do you feel about this project? If you have any issues or concerns regarding this project, you are welcome to post them here ... </textarea
+        >
+      </form>
+      <button class="filter-submit-button feedback-submit-button">
+        Submit
+      </button>
+    </div>
+
+    <!-- Project 09 -->
+    <div id="myProject09" class="sidenav projects-page projects-page09">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNavP9()"
+        >&times;</a
+      >
+      <a href="#" class="project-details-class">PROJECT DETAILS</a>
+      <p>
+        <strong>Project name:</strong>
+
+        Strengthening Public Investment Management System (SPIMS) Project Phase
+        2
+      </p>
+      <p><strong>Category:</strong> Governance</p>
+      <p>
+        <strong>Description:</strong>
+
+        Public investment contributes to achieving mid-long term development
+        plan
+      </p>
+      <p>
+        <strong>Affiliated Agency:</strong>
+
+        Programming Division, Planning Commission, Ministry of Planning
+      </p>
+      <p><strong>Project start time:</strong> 2019-09-28</p>
+      <p><strong>Project completion time:</strong> 2023-09-27</p>
+      <p><strong>Total budget:</strong> JPY 350M</p>
+      <p><strong>Completion percentage:</strong> 80.48%</p>
+      <div class="progress2 progress-moved">
+        <div class="progress-bar2"></div>
+      </div>
+      <form>
+        <textarea>
+    Hi there! How do you feel about this project? If you have any issues or concerns regarding this project, you are welcome to post them here ... </textarea
+        >
+      </form>
+      <button class="filter-submit-button feedback-submit-button">
+        Submit
+      </button>
+    </div>
+
+    <!-- Project 10 -->
+    <div id="myProject10" class="sidenav projects-page projects-page10">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNavP10()"
+        >&times;</a
+      >
+      <a href="#" class="project-details-class">PROJECT DETAILS</a>
+      <p>
+        <strong>Project name:</strong>
+
+        Upazila Integrated Capacity Development Project (UICDP)
+      </p>
+      <p><strong>Category:</strong> Governance</p>
+      <p>
+        <strong>Description:</strong>
+
+        Promoting development works and public service delivery, based on the
+        regional characteristics, through strengthened capacity of Upazila
+        Parishad.
+      </p>
+      <p>
+        <strong>Affiliated Agency:</strong>
+
+        Local Government Division (LGD), Ministry of Local Government, Rural
+        Development and Cooperatives (MLGRD&C)
+      </p>
+      <p><strong>Project start time:</strong> 2017-09-16</p>
+      <p><strong>Project completion time:</strong> 2022-12-15</p>
+      <p><strong>Total budget:</strong> JPY 405M</p>
+      <p><strong>Completion percentage:</strong> 100.00%</p>
+      <div class="progress2 progress-moved">
+        <div class="progress-bar2"></div>
+      </div>
+      <form>
+        <textarea>
+        Hi there! How do you feel about this project? If you have any issues or concerns regarding this project, you are welcome to post them here ... </textarea
+        >
+      </form>
+      <button class="filter-submit-button feedback-submit-button">
+        Submit
+      </button>
+    </div>
+
+    <!-- Project 11 -->
+    <div id="myProject11" class="sidenav projects-page projects-page11">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNavP11()"
+        >&times;</a
+      >
+      <a href="#" class="project-details-class">PROJECT DETAILS</a>
+      <p>
+        <strong>Project name:</strong>
+
+        The Integrated Energy and Power Master Plan Project in Bangladesh
+      </p>
+      <p><strong>Category:</strong> Energy and Mining</p>
+      <p>
+        <strong>Description:</strong>
+
+        A low/zero carbon energy demand/supply system will be established based
+        on the premise of ensuring energy security and economic viability.
+      </p>
+      <p>
+        <strong>Affiliated Agency:</strong>
+
+        MoPEMR (Ministry of Power, Energy and Mineral Resources)
+      </p>
+      <p><strong>Project start time:</strong> 2021-06-22</p>
+      <p><strong>Project completion time:</strong> 2024-01-31</p>
+      <p><strong>Total budget:</strong> JPY 285M</p>
+      <p><strong>Completion percentage:</strong> 58.87%</p>
+      <div class="progress2 progress-moved">
+        <div class="progress-bar2"></div>
+      </div>
+      <form>
+        <textarea>
+        Hi there! How do you feel about this project? If you have any issues or concerns regarding this project, you are welcome to post them here ... </textarea
+        >
+      </form>
+      <button class="filter-submit-button feedback-submit-button">
+        Submit
+      </button>
+    </div>
+
+    <!-- Project 12 -->
+    <div id="myProject12" class="sidenav projects-page projects-page12">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNavP12()"
+        >&times;</a
+      >
+      <a href="#" class="project-details-class">PROJECT DETAILS</a>
+      <p>
+        <strong>Project name:</strong>
+
+        The Project for Gas Network System Digitalization and Improvement of
+        Operational Efficiency in Gas Sector in Bangladesh
+      </p>
+      <p><strong>Category:</strong> Energy and Mining</p>
+      <p>
+        <strong>Description:</strong>
+
+        Reliable, effective and efficient gas and power supply for economic
+        development of the country is achieved.
+      </p>
+      <p>
+        <strong>Affiliated Agency:</strong>
+
+        Energy and Mineral Resources Division (EMRD) Ministry of Power, Energy
+        and Mineral Resources MoPEMR)
+      </p>
+      <p><strong>Project start time:</strong> 2020-01-27</p>
+      <p><strong>Project completion time:</strong> 2022-12-22</p>
+      <p><strong>Total budget:</strong> JPY 180M</p>
+      <p><strong>Completion percentage:</strong> 99.43%</p>
+      <div class="progress2 progress-moved">
+        <div class="progress-bar2"></div>
+      </div>
+      <form>
+        <textarea>
+            Hi there! How do you feel about this project? If you have any issues or concerns regarding this project, you are welcome to post them here ... </textarea
+        >
+      </form>
+      <button class="filter-submit-button feedback-submit-button">
+        Submit
+      </button>
+    </div>
+
+    <!-- About US -->
+    <div id="about-us-slider" class="sidenav projects-page">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeAboutUs()"
+        >&times;</a
+      >
+      <a href="#" class="about-us-heading">ABOUT US</a>
+
+      <p class="memeber1Name"><strong>Shafiqur Rahman</strong></p>
+      <p>
+        Studying Information Technology at University of Information Technology
+        & Scieneces
+      </p>
+      <p class="memeber2Name"><strong>Mahedi Hasan</strong></p>
+      <p>
+        Studying Computer Science & Engineering at University of Information
+        Technology & Scieneces
+      </p>
+      <p class="memeber3Name"><strong>Salfi Alam Sabit</strong></p>
+      <p>
+        Studying Information Technology at University of Information Technology
+        & Scieneces
+      </p>
+    </div>
+
+    <div id="map"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
